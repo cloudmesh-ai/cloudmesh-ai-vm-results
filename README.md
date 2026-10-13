@@ -1,14 +1,3 @@
-
-
-
-
-Tips: use matplotlib, seaborn, or visuzlization tools of your choice.
-
-
-
-
-######
-
 # Smoke Test Analysis & Comparison Framework
 
 Develop a lightweight, extensible, and automated toolkit designed to ingest, parse, and visualize smoke test execution results. 
