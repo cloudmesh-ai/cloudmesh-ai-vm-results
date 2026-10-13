@@ -1,0 +1,62 @@
+Benchmark: lima-smoke
+Date: 2026-10-12 00:48:24
+User: gregor
+Branch: main
+Commit: 39ba18725ca961342cd55db92d48e325f9c4718a
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-12 00:48:24.815229'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 25.7 GiB
+mem.available: 29.1 GiB
+mem.free: 3.4 GiB
+mem.inactive: 25.6 GiB
+mem.percent: 54.6%
+mem.total: 64.0 GiB
+mem.used: 30.0 GiB
+mem.wired: 4.3 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.14.4 (main, Sep 24 2026, 12:53:39) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.4
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: g-macpro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+lima_check_reqs                ok         0.0        0.0        
+lima_get_images                ok         0.027      0.027      
+lima_get_flavors               ok         0.0        0.0        
+lima_start                     ok         40.257     40.257     
+lima_wait_running              ok         0.047      0.047      
+lima_connectivity              ok         0.081      0.081      
+lima_upload_key                ok         0.055      0.055      
+lima_verify_key                ok         0.084      0.084      
+lima_delete_key                ok         0.052      0.052      
+lima_verify_key_deleted        ok         0.081      0.081      
+lima_info                      ok         0.058      0.058      
+lima_list                      ok         0.03       0.03       
+lima_stop                      ok         1.69       1.69       
+lima_delete                    ok         0.203      0.203      
+

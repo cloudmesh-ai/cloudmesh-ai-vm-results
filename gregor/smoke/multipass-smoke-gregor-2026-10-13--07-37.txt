@@ -1,0 +1,64 @@
+Benchmark: multipass-smoke
+Date: 2026-10-13 07:37:00
+User: gregor
+Branch: dev2
+Commit: 4a2ea643e37c47bd0a4d7ee7b2e3244353413ecf
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-13 07:37:00.904008'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 20.7 GiB
+mem.available: 24.8 GiB
+mem.free: 4.1 GiB
+mem.inactive: 20.1 GiB
+mem.percent: 61.2%
+mem.total: 64.0 GiB
+mem.used: 24.5 GiB
+mem.wired: 3.8 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.14.4 (main, Sep 24 2026, 12:53:39) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.4
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: g-macpro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+multipass_check_reqs           ok         0.0        0.0        
+multipass_get_images           ok         0.093      0.093      
+multipass_get_flavors          ok         0.0        0.0        
+multipass_start                ok         100.536    100.536    
+multipass_wait_running         ok         0.057      0.057      
+multipass_connectivity         ok         0.29       0.29       
+multipass_upload_key           ok         0.098      0.098      
+multipass_verify_key           ok         0.106      0.106      
+multipass_delete_key           ok         0.092      0.092      
+multipass_verify_key_deleted   ok         0.084      0.084      
+multipass_shelve               ok         3.87       3.87       
+multipass_unshelve             ok         23.712     23.712     
+multipass_info                 ok         0.109      0.109      
+multipass_list                 ok         0.039      0.039      
+multipass_stop                 ok         15.386     15.386     
+multipass_delete               ok         0.121      0.121      
+

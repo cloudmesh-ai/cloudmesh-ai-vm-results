@@ -23,7 +23,7 @@ couds:
 
 ```text
 ├── results/                   # Place your raw smoke test result files (.json or .csv) here
-└── <username>/
+└── <username>/smoke/
     ├── images                 # Place all your images here
     ├── comparison.md         # Place all your images here
     ├── analyze-smoke-tests.py # Core analysis and visualization script

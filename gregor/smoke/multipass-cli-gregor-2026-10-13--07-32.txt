@@ -1,0 +1,51 @@
+Benchmark: Multipass CLI
+Date: 2026-10-13 07:32:53
+User: gregor
+Branch: dev2
+Commit: 4a2ea643e37c47bd0a4d7ee7b2e3244353413ecf
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-13 07:32:53.891178'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 20.0 GiB
+mem.available: 26.1 GiB
+mem.free: 6.0 GiB
+mem.inactive: 19.5 GiB
+mem.percent: 59.2%
+mem.total: 64.0 GiB
+mem.used: 23.2 GiB
+mem.wired: 3.2 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.14.4 (main, Sep 24 2026, 12:53:39) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.4
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: g-macpro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+multipass_start                ok         102.294    102.294    
+multipass_list                 ok         0.086      0.086      
+multipass_run                  ok         0.154      0.154      
+
