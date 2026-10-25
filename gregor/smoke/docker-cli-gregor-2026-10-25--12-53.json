@@ -1,0 +1,103 @@
+{
+    "experiment": {
+        "benchmark": "Docker CLI",
+        "date": "2026-10-25T12:53:51.531414",
+        "user": "gregor",
+        "branch": "dev2",
+        "commit": "cfc9b11bf68c01e6c61ea507d635f0922c474144"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "MacBookPro",
+            "platform_version": "26.6.2",
+            "sys_platform": "darwin",
+            "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+            "python_version": "3.14.4",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "docker_run",
+            "status": "ok",
+            "time": 0.331,
+            "sum": 0.331,
+            "msg": null
+        },
+        {
+            "name": "docker_list",
+            "status": "ok",
+            "time": 0.3863,
+            "sum": 0.3863,
+            "msg": null
+        },
+        {
+            "name": "docker_info",
+            "status": "ok",
+            "time": 0.0108,
+            "sum": 0.0108,
+            "msg": null
+        },
+        {
+            "name": "docker_ip",
+            "status": "ok",
+            "time": 0.0576,
+            "sum": 0.0576,
+            "msg": null
+        },
+        {
+            "name": "docker_restart",
+            "status": "ok",
+            "time": 10.1424,
+            "sum": 10.1424,
+            "msg": null
+        },
+        {
+            "name": "docker_suspend",
+            "status": "ok",
+            "time": 0.0314,
+            "sum": 0.0314,
+            "msg": null
+        },
+        {
+            "name": "docker_resume",
+            "status": "ok",
+            "time": 0.0225,
+            "sum": 0.0225,
+            "msg": null
+        },
+        {
+            "name": "docker_image_pull",
+            "status": "ok",
+            "time": 1.7196,
+            "sum": 1.7196,
+            "msg": null
+        },
+        {
+            "name": "docker_image_list",
+            "status": "ok",
+            "time": 0.3322,
+            "sum": 0.3322,
+            "msg": null
+        },
+        {
+            "name": "docker_stop",
+            "status": "ok",
+            "time": 3.1177,
+            "sum": 3.1177,
+            "msg": null
+        },
+        {
+            "name": "docker_delete",
+            "status": "ok",
+            "time": 0.0292,
+            "sum": 0.0292,
+            "msg": null
+        }
+    ]
+}
