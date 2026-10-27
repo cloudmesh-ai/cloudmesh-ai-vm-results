@@ -1,0 +1,131 @@
+{
+    "experiment": {
+        "benchmark": "Jetstream CLI",
+        "date": "2026-10-26T23:47:17.901023",
+        "user": "gregor",
+        "branch": "main",
+        "commit": "ecfa46ab7368136e532b49fcee17ab46f68231e0"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "MacBookPro",
+            "platform_version": "26.6.2",
+            "sys_platform": "darwin",
+            "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "python_version": "3.15.0",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "provider_list",
+            "status": "ok",
+            "time": 0.0038,
+            "sum": 0.0038,
+            "msg": null
+        },
+        {
+            "name": "provider_set",
+            "status": "ok",
+            "time": 0.0026,
+            "sum": 0.0026,
+            "msg": null
+        },
+        {
+            "name": "start",
+            "status": "ok",
+            "time": 80.3923,
+            "sum": 80.3923,
+            "msg": null
+        },
+        {
+            "name": "list",
+            "status": "ok",
+            "time": 1.4195,
+            "sum": 1.4195,
+            "msg": null
+        },
+        {
+            "name": "run",
+            "status": "ok",
+            "time": 3.72,
+            "sum": 3.72,
+            "msg": null
+        },
+        {
+            "name": "stop",
+            "status": "ok",
+            "time": 5.0418,
+            "sum": 5.0418,
+            "msg": null
+        },
+        {
+            "name": "security-group",
+            "status": "ok",
+            "time": 1.1395,
+            "sum": 1.1395,
+            "msg": null
+        },
+        {
+            "name": "ssh-config",
+            "status": "ok",
+            "time": 0.0013,
+            "sum": 0.0013,
+            "msg": null
+        },
+        {
+            "name": "delete",
+            "status": "ok",
+            "time": 6.8666,
+            "sum": 6.8666,
+            "msg": null
+        },
+        {
+            "name": "image",
+            "status": "ok",
+            "time": 2.1876,
+            "sum": 2.1876,
+            "msg": null
+        },
+        {
+            "name": "flavor",
+            "status": "ok",
+            "time": 1.527,
+            "sum": 1.527,
+            "msg": null
+        },
+        {
+            "name": "key_list",
+            "status": "ok",
+            "time": 1.5434,
+            "sum": 1.5434,
+            "msg": null
+        },
+        {
+            "name": "key_list_all",
+            "status": "ok",
+            "time": 2.6089,
+            "sum": 2.6089,
+            "msg": null
+        },
+        {
+            "name": "key_upload",
+            "status": "ok",
+            "time": 1.6421,
+            "sum": 1.6421,
+            "msg": null
+        },
+        {
+            "name": "key_delete",
+            "status": "ok",
+            "time": 1.3827,
+            "sum": 1.3827,
+            "msg": null
+        }
+    ]
+}

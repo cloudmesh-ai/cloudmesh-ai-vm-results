@@ -1,0 +1,60 @@
+Benchmark: Lima CLI
+Date: 2026-10-27 00:14:23
+User: gregor
+Branch: main
+Commit: ecfa46ab7368136e532b49fcee17ab46f68231e0
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-27 00:14:23.571531'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 26.3 GiB
+mem.available: 26.7 GiB
+mem.free: 227.0 MiB
+mem.inactive: 25.8 GiB
+mem.percent: 58.2%
+mem.total: 64.0 GiB
+mem.used: 30.4 GiB
+mem.wired: 4.0 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]
+python.pip: 26.2.2
+python.version: 3.15.0
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: MacBookPro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+provider_list                  ok         0.005      0.005      
+provider_set                   ok         0.003      0.003      
+start                          ok         38.254     38.254     
+list                           ok         0.069      0.069      
+run                            ok         0.088      0.088      
+stop                           ok         1.734      1.734      
+delete                         ok         0.197      0.197      
+image                          ok         0.033      0.033      
+flavor                         ok         0.036      0.036      
+keys                           ok         0.031      0.031      
+security_group                 ok         0.032      0.032      
+ssh_config                     failed     0.05       0.05       
+

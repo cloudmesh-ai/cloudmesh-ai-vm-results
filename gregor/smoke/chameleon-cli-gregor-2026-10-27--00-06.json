@@ -1,0 +1,110 @@
+{
+    "experiment": {
+        "benchmark": "Chameleon CLI",
+        "date": "2026-10-27T00:06:05.491482",
+        "user": "gregor",
+        "branch": "main",
+        "commit": "ecfa46ab7368136e532b49fcee17ab46f68231e0"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "MacBookPro",
+            "platform_version": "26.6.2",
+            "sys_platform": "darwin",
+            "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "python_version": "3.15.0",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "provider_list",
+            "status": "ok",
+            "time": 0.0074,
+            "sum": 0.0074,
+            "msg": null
+        },
+        {
+            "name": "provider_set",
+            "status": "ok",
+            "time": 0.0033,
+            "sum": 0.0033,
+            "msg": null
+        },
+        {
+            "name": "start",
+            "status": "ok",
+            "time": 50.1819,
+            "sum": 50.1819,
+            "msg": null
+        },
+        {
+            "name": "list",
+            "status": "ok",
+            "time": 7.9359,
+            "sum": 7.9359,
+            "msg": null
+        },
+        {
+            "name": "stop",
+            "status": "ok",
+            "time": 3.7029,
+            "sum": 3.7029,
+            "msg": null
+        },
+        {
+            "name": "delete",
+            "status": "ok",
+            "time": 10.3586,
+            "sum": 10.3586,
+            "msg": null
+        },
+        {
+            "name": "images",
+            "status": "ok",
+            "time": 2.4782,
+            "sum": 2.4782,
+            "msg": null
+        },
+        {
+            "name": "flavors",
+            "status": "ok",
+            "time": 2.7322,
+            "sum": 2.7322,
+            "msg": null
+        },
+        {
+            "name": "key_upload",
+            "status": "ok",
+            "time": 1.3673,
+            "sum": 1.3673,
+            "msg": null
+        },
+        {
+            "name": "key_delete",
+            "status": "ok",
+            "time": 1.1736,
+            "sum": 1.1736,
+            "msg": null
+        },
+        {
+            "name": "security_groups",
+            "status": "ok",
+            "time": 1.4496,
+            "sum": 1.4496,
+            "msg": null
+        },
+        {
+            "name": "ssh_config",
+            "status": "ok",
+            "time": 0.0015,
+            "sum": 0.0015,
+            "msg": null
+        }
+    ]
+}

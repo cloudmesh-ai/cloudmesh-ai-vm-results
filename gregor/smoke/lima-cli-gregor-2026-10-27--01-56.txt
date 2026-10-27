@@ -1,0 +1,55 @@
+Benchmark: Lima CLI
+Date: 2026-10-27 01:56:24
+User: gregor
+Branch: main
+Commit: 2bfe63cee337800855208a8bb8e846d9563c93ff
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-27 01:56:24.230302'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 20.5 GiB
+mem.available: 24.4 GiB
+mem.free: 2.7 GiB
+mem.inactive: 20.7 GiB
+mem.percent: 61.9%
+mem.total: 64.0 GiB
+mem.used: 24.5 GiB
+mem.wired: 4.0 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]
+python.pip: 26.2.2
+python.version: 3.15.0
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: MacBookPro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+provider_list                  ok         0.006      0.006      
+provider_set                   ok         0.003      0.003      
+start                          ok         43.794     43.794     
+list                           ok         0.13       0.13       
+run                            ok         0.087      0.087      
+stop                           ok         1.764      1.764      
+delete                         failed     0.136      0.136      
+

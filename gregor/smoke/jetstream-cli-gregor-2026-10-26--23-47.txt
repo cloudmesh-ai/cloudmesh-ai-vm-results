@@ -1,0 +1,63 @@
+Benchmark: Jetstream CLI
+Date: 2026-10-26 23:47:17
+User: gregor
+Branch: main
+Commit: ecfa46ab7368136e532b49fcee17ab46f68231e0
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-26 23:47:17.814625'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 64.0 GiB
+gpu.vendor: Apple
+mem.active: 25.5 GiB
+mem.available: 27.7 GiB
+mem.free: 2.1 GiB
+mem.inactive: 24.9 GiB
+mem.percent: 56.8%
+mem.total: 64.0 GiB
+mem.used: 29.6 GiB
+mem.wired: 4.0 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.6.2
+python: 3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]
+python.pip: 26.2.2
+python.version: 3.15.0
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: MacBookPro
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000'
+user: gregor
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+provider_list                  ok         0.004      0.004      
+provider_set                   ok         0.003      0.003      
+start                          ok         80.392     80.392     
+list                           ok         1.419      1.419      
+run                            ok         3.72       3.72       
+stop                           ok         5.042      5.042      
+security-group                 ok         1.14       1.14       
+ssh-config                     ok         0.001      0.001      
+delete                         ok         6.867      6.867      
+image                          ok         2.188      2.188      
+flavor                         ok         1.527      1.527      
+key_list                       ok         1.543      1.543      
+key_list_all                   ok         2.609      2.609      
+key_upload                     ok         1.642      1.642      
+key_delete                     ok         1.383      1.383      
+

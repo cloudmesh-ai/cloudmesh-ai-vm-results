@@ -1,0 +1,82 @@
+{
+    "experiment": {
+        "benchmark": "Lima CLI",
+        "date": "2026-10-27T00:10:14.008802",
+        "user": "gregor",
+        "branch": "main",
+        "commit": "ecfa46ab7368136e532b49fcee17ab46f68231e0"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "MacBookPro",
+            "platform_version": "26.6.2",
+            "sys_platform": "darwin",
+            "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "python_version": "3.15.0",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "provider_list",
+            "status": "ok",
+            "time": 0.0054,
+            "sum": 0.0054,
+            "msg": null
+        },
+        {
+            "name": "provider_set",
+            "status": "ok",
+            "time": 0.0033,
+            "sum": 0.0033,
+            "msg": null
+        },
+        {
+            "name": "start",
+            "status": "ok",
+            "time": 40.219,
+            "sum": 40.219,
+            "msg": null
+        },
+        {
+            "name": "list",
+            "status": "ok",
+            "time": 0.0783,
+            "sum": 0.0783,
+            "msg": null
+        },
+        {
+            "name": "run",
+            "status": "ok",
+            "time": 0.0911,
+            "sum": 0.0911,
+            "msg": null
+        },
+        {
+            "name": "stop",
+            "status": "ok",
+            "time": 1.7282,
+            "sum": 1.7282,
+            "msg": null
+        },
+        {
+            "name": "delete",
+            "status": "ok",
+            "time": 0.1965,
+            "sum": 0.1965,
+            "msg": null
+        },
+        {
+            "name": "image",
+            "status": "failed",
+            "time": 0.03,
+            "sum": 0.03,
+            "msg": null
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "experiment": {
+        "benchmark": "Lima CLI",
+        "date": "2026-10-27T01:27:42.628611",
+        "user": "gregor",
+        "branch": "main",
+        "commit": "2bfe63cee337800855208a8bb8e846d9563c93ff"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "MacBookPro",
+            "platform_version": "26.6.2",
+            "sys_platform": "darwin",
+            "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "python_version": "3.15.0",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "provider_list",
+            "status": "ok",
+            "time": 0.0058,
+            "sum": 0.0058,
+            "msg": null
+        },
+        {
+            "name": "provider_set",
+            "status": "ok",
+            "time": 0.0031,
+            "sum": 0.0031,
+            "msg": null
+        },
+        {
+            "name": "start",
+            "status": "failed",
+            "time": 0.1368,
+            "sum": 0.1368,
+            "msg": null
+        }
+    ]
+}
