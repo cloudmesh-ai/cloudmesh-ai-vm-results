@@ -26,9 +26,14 @@ def load_data(results_dir):
                 benchmark = data['experiment']['benchmark']
                 date_str = data['experiment']['date']
                 for timer in data.get('timers', []):
+                    # The new format uses generic names like 'start', 'list', 'stop'
+                    # We prefix them with the benchmark name to keep them unique
+                    prefix = benchmark.lower().replace(' ', '_').replace(' cli', '')
+                    op_name = f"{prefix}_{timer['name']}"
+                    
                     all_data.append({
                         'benchmark': benchmark, 'date': date_str,
-                        'operation': timer['name'], 'time': timer['time'], 'status': timer['status']
+                        'operation': op_name, 'time': timer['time'], 'status': timer['status']
                     })
             except Exception as e:
                 print(f"Error parsing {json_file}: {e}")
@@ -61,9 +66,10 @@ def plot_visualizations(df):
     plt.tight_layout()
     plt.savefig(IMAGES_DIR / "all_operations.png")
     plt.close()
-    
+
+
     # Graph 2: Start and Stop only (Linear scale)
-    mask = (df['operation'].str.contains('start|run|stop', case=False, na=False)) & \
+    mask = (df['operation'].str.contains('start|stop', case=False, na=False)) & \
            (~df['operation'].str.contains('wait_running', case=False, na=False))
     start_stop_ops = df[mask].copy()
     
@@ -71,33 +77,38 @@ def plot_visualizations(df):
         def categorize_op(op):
             op = op.lower()
             if 'stop' in op: return 'Stop'
-            if 'start' in op or 'run' in op: return 'Start/Run'
+            if 'start' in op: return 'Start'
             return 'Other'
         start_stop_ops['category'] = start_stop_ops['operation'].apply(categorize_op)
         
+        # Filter out 'Other' so only Start and Stop are plotted
+        start_stop_ops = start_stop_ops[start_stop_ops['category'] != 'Other'].copy()
+        
         plt.figure(figsize=(12, 6))
         err_ss = get_errorbar_setting(start_stop_ops, 'category', 'benchmark')
-        ax = sns.barplot(data=start_stop_ops, x='category', y='time', hue='benchmark', estimator='mean', errorbar=err_ss)
-        plt.title('Comparison of Start/Run and Stop Times by Benchmark (CLI Only)')
+        
+        # Explicitly set the order for benchmarks to match the data consistently
+        hue_order = df['benchmark'].unique()
+        
+        ax = sns.barplot(data=start_stop_ops, x='category', y='time', hue='benchmark', 
+                         estimator='mean', errorbar=err_ss, hue_order=hue_order)
+        
+        plt.title('Comparison of Start and Stop Times by Benchmark (CLI Only)')
         plt.ylabel('Time (seconds)')
         plt.xlabel('Operation Category')
+        plt.yscale('linear')
         
-        hue_order = df['benchmark'].unique()
-        cat_order = [c for c in ['Start/Run', 'Stop'] if c in start_stop_ops['category'].unique()]
-        bar_idx = 0
-        for hue in hue_order:
-            for cat in cat_order:
-                val = start_stop_ops[(start_stop_ops['benchmark'] == hue) & 
-                                     (start_stop_ops['category'] == cat)]['time'].median()
-                if not np.isnan(val):
-                    if bar_idx < len(ax.patches):
-                        rect = ax.patches[bar_idx]
-                        ax.text(rect.get_x() + rect.get_width()/2, rect.get_height() + 0.5, 
-                                f'{val:.2f}', ha='center', va='bottom', fontsize=9, fontweight='bold')
-                bar_idx += 1
+        # Annotate each bar with its mean value directly using Matplotlib's bar_label.
+        # This avoids brittle index calculations and ensures the label matches the bar height.
+        for container in ax.containers:
+            # Use a formatting string to display the value with two decimal places.
+            # ``padding`` adds a small space above the bar for readability.
+            ax.bar_label(container, fmt='%.2f', padding=2, fontsize=9, fontweight='bold')
+
         plt.tight_layout()
         plt.savefig(IMAGES_DIR / "start_stop_operations.png")
         plt.close()
+
     else:
         print("No start/stop operations found to plot.")
 
