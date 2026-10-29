@@ -1,0 +1,56 @@
+Benchmark: Multipass CLI
+Date: 2026-10-29 10:01:08
+User: sugwu123
+Branch: dev2
+Commit: f741af9919190e19d4bcc1e477d9627f9dba9964
+----------------------------------------
+container.present: false
+cpu: Apple M1 Pro
+cpu.temp: null
+cpu_cores: 8
+cpu_count: 8
+cpu_threads: 8
+date: '2026-10-29 10:01:08.091941'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 16.0 GiB
+gpu.vendor: Apple
+mem.active: 2.2 GiB
+mem.available: 3.7 GiB
+mem.free: 1.6 GiB
+mem.inactive: 2.2 GiB
+mem.percent: 76.8%
+mem.total: 16.0 GiB
+mem.used: 4.9 GiB
+mem.wired: 2.7 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 27.0.1
+python: 3.13.7 (v3.13.7:bcee1c32211, Aug 14 2025, 19:10:51) [Clang 16.0.0 (clang-1600.0.26.6)]
+python.pip: '25.2'
+python.version: 3.13.7
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: Sydels-MacBook-Pro.local
+uname.processor: arm
+uname.release: 27.0.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 27.0.0: Tue Aug 11 21:22:49 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6000'
+user: sugwu123
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+provider_list                  ok         0.01       0.01       
+provider_set                   ok         0.003      0.003      
+start                          ok         104.314    104.314    
+list                           ok         0.209      0.209      
+stop                           ok         3.845      3.845      
+delete                         ok         0.132      0.132      
+images                         ok         0.082      0.082      
+flavors                        ok         0.002      0.002      
+

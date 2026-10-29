@@ -1,0 +1,82 @@
+{
+    "experiment": {
+        "benchmark": "Multipass CLI",
+        "date": "2026-10-29T10:01:08.184973",
+        "user": "sugwu123",
+        "branch": "dev2",
+        "commit": "f741af9919190e19d4bcc1e477d9627f9dba9964"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "27.0.0",
+            "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:22:49 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "Sydels-MacBook-Pro.local",
+            "platform_version": "27.0.1",
+            "sys_platform": "darwin",
+            "python": "3.13.7 (v3.13.7:bcee1c32211, Aug 14 2025, 19:10:51) [Clang 16.0.0 (clang-1600.0.26.6)]",
+            "python_version": "3.13.7",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "provider_list",
+            "status": "ok",
+            "time": 0.0105,
+            "sum": 0.0105,
+            "msg": null
+        },
+        {
+            "name": "provider_set",
+            "status": "ok",
+            "time": 0.0025,
+            "sum": 0.0025,
+            "msg": null
+        },
+        {
+            "name": "start",
+            "status": "ok",
+            "time": 104.3142,
+            "sum": 104.3142,
+            "msg": null
+        },
+        {
+            "name": "list",
+            "status": "ok",
+            "time": 0.209,
+            "sum": 0.209,
+            "msg": null
+        },
+        {
+            "name": "stop",
+            "status": "ok",
+            "time": 3.8452,
+            "sum": 3.8452,
+            "msg": null
+        },
+        {
+            "name": "delete",
+            "status": "ok",
+            "time": 0.1316,
+            "sum": 0.1316,
+            "msg": null
+        },
+        {
+            "name": "images",
+            "status": "ok",
+            "time": 0.0822,
+            "sum": 0.0822,
+            "msg": null
+        },
+        {
+            "name": "flavors",
+            "status": "ok",
+            "time": 0.0017,
+            "sum": 0.0017,
+            "msg": null
+        }
+    ]
+}
