@@ -17,7 +17,10 @@ def load_benchmarks(root: Path = REPO_ROOT) -> pd.DataFrame:
     """Load benchmark timers from contributor JSON files."""
     records = []
 
-    for path in sorted(root.glob("*/smoke/*.json")):
+    for path in sorted(
+        set(root.glob("*/smoke/*.json"))
+        | set(root.glob("results/**/*.json"))
+    ):
         try:
             with path.open(encoding="utf-8") as file:
                 data = json.load(file)
@@ -46,7 +49,10 @@ def load_benchmarks(root: Path = REPO_ROOT) -> pd.DataFrame:
         except (OSError, ValueError, KeyError, TypeError) as error:
             print(f"Skipping {path}: {error}")
 
-    for path in sorted(root.glob("*/smoke/*.csv")):
+    for path in sorted(
+        set(root.glob("*/smoke/*.csv"))
+        | set(root.glob("results/**/*.csv"))
+    ):
         try:
             csv = pd.read_csv(path)
 
