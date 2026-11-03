@@ -1,0 +1,54 @@
+Benchmark: Lima CLI
+Date: 2026-10-12 16:49:05
+User: kbass
+Branch: fix/provider-optional-dependencies
+Commit: 4f89b7dce006105c6849f710cc876dc775284cc0
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-12 16:49:05.681619'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 32.0 GiB
+gpu.vendor: Apple
+mem.active: 7.7 GiB
+mem.available: 11.3 GiB
+mem.free: 3.6 GiB
+mem.inactive: 7.7 GiB
+mem.percent: 64.8%
+mem.total: 32.0 GiB
+mem.used: 10.0 GiB
+mem.wired: 2.2 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.7.1
+python: 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.7
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: KB-MBP
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000'
+user: kbass
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+lima_cli_start                 ok         40.538     40.538     
+lima_cli_list                  ok         0.073      0.073      
+lima_cli_stop                  ok         1.641      1.641      
+lima_cli_delete                ok         0.214      0.214      
+lima_cli_restart               ok         36.924     36.924     
+lima_cli_ssh_config            ok         0.105      0.105      
+

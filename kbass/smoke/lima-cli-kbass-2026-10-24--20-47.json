@@ -1,0 +1,82 @@
+{
+    "experiment": {
+        "benchmark": "Lima CLI",
+        "date": "2026-10-24T20:47:14.452746",
+        "user": "kbass",
+        "branch": "fix/oct24-lima-run-command",
+        "commit": "707f824d76e7415fd1cafeb39cd1dbaa6035fe66"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "KB-MBP",
+            "platform_version": "26.7.1",
+            "sys_platform": "darwin",
+            "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+            "python_version": "3.14.7",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "lima_provider_list",
+            "status": "ok",
+            "time": 0.0061,
+            "sum": 0.0061,
+            "msg": null
+        },
+        {
+            "name": "lima_provider_set",
+            "status": "ok",
+            "time": 0.0015,
+            "sum": 0.0015,
+            "msg": null
+        },
+        {
+            "name": "lima_start",
+            "status": "ok",
+            "time": 41.3407,
+            "sum": 41.3407,
+            "msg": null
+        },
+        {
+            "name": "lima_list",
+            "status": "ok",
+            "time": 0.0595,
+            "sum": 0.0595,
+            "msg": null
+        },
+        {
+            "name": "lima_run",
+            "status": "ok",
+            "time": 0.0823,
+            "sum": 0.0823,
+            "msg": null
+        },
+        {
+            "name": "lima_stop",
+            "status": "ok",
+            "time": 1.6487,
+            "sum": 1.6487,
+            "msg": null
+        },
+        {
+            "name": "lima_delete",
+            "status": "ok",
+            "time": 0.1984,
+            "sum": 0.1984,
+            "msg": null
+        },
+        {
+            "name": "lima_images",
+            "status": "failed",
+            "time": 0.0272,
+            "sum": 0.0272,
+            "msg": null
+        }
+    ]
+}
