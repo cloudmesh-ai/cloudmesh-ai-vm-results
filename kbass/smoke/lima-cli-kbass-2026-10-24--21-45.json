@@ -1,0 +1,110 @@
+{
+    "experiment": {
+        "benchmark": "Lima CLI",
+        "date": "2026-10-24T21:45:33.955364",
+        "user": "kbass",
+        "branch": "fix/oct24-lima-run-command",
+        "commit": "707f824d76e7415fd1cafeb39cd1dbaa6035fe66"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "KB-MBP",
+            "platform_version": "26.7.1",
+            "sys_platform": "darwin",
+            "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+            "python_version": "3.14.7",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "lima_provider_list",
+            "status": "ok",
+            "time": 0.0076,
+            "sum": 0.0076,
+            "msg": null
+        },
+        {
+            "name": "lima_provider_set",
+            "status": "ok",
+            "time": 0.0015,
+            "sum": 0.0015,
+            "msg": null
+        },
+        {
+            "name": "lima_start",
+            "status": "ok",
+            "time": 39.8093,
+            "sum": 39.8093,
+            "msg": null
+        },
+        {
+            "name": "lima_list",
+            "status": "ok",
+            "time": 0.0771,
+            "sum": 0.0771,
+            "msg": null
+        },
+        {
+            "name": "lima_run",
+            "status": "ok",
+            "time": 0.0844,
+            "sum": 0.0844,
+            "msg": null
+        },
+        {
+            "name": "lima_stop",
+            "status": "ok",
+            "time": 1.6447,
+            "sum": 1.6447,
+            "msg": null
+        },
+        {
+            "name": "lima_delete",
+            "status": "ok",
+            "time": 0.1965,
+            "sum": 0.1965,
+            "msg": null
+        },
+        {
+            "name": "lima_images",
+            "status": "ok",
+            "time": 0.0543,
+            "sum": 0.0543,
+            "msg": null
+        },
+        {
+            "name": "lima_flavors",
+            "status": "ok",
+            "time": 0.0234,
+            "sum": 0.0234,
+            "msg": null
+        },
+        {
+            "name": "lima_keys",
+            "status": "ok",
+            "time": 0.0246,
+            "sum": 0.0246,
+            "msg": null
+        },
+        {
+            "name": "lima_security_groups",
+            "status": "ok",
+            "time": 0.0237,
+            "sum": 0.0237,
+            "msg": null
+        },
+        {
+            "name": "lima_ssh_config",
+            "status": "ok",
+            "time": 0.1564,
+            "sum": 0.1564,
+            "msg": null
+        }
+    ]
+}

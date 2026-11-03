@@ -1,0 +1,60 @@
+Benchmark: Lima CLI
+Date: 2026-10-24 21:28:16
+User: kbass
+Branch: fix/oct24-lima-run-command
+Commit: 707f824d76e7415fd1cafeb39cd1dbaa6035fe66
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-24 21:28:16.424411'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 32.0 GiB
+gpu.vendor: Apple
+mem.active: 11.0 GiB
+mem.available: 11.5 GiB
+mem.free: 435.5 MiB
+mem.inactive: 10.3 GiB
+mem.percent: 64.2%
+mem.total: 32.0 GiB
+mem.used: 13.4 GiB
+mem.wired: 2.3 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.7.1
+python: 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.7
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: KB-MBP
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000'
+user: kbass
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+lima_provider_list             ok         0.005      0.005      
+lima_provider_set              ok         0.003      0.003      
+lima_start                     ok         38.176     38.176     
+lima_list                      ok         0.067      0.067      
+lima_run                       ok         0.088      0.088      
+lima_stop                      ok         1.647      1.647      
+lima_delete                    ok         0.203      0.203      
+lima_images                    ok         0.058      0.058      
+lima_flavors                   ok         0.025      0.025      
+lima_keys                      ok         0.025      0.025      
+lima_security_groups           ok         0.025      0.025      
+lima_ssh_config                ok         0.161      0.161      
+
