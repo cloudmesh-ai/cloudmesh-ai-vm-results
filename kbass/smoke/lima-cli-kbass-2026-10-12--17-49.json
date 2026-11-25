@@ -1,0 +1,10 @@
+{
+    "benchmark": "Lima CLI",
+    "date": "2026-10-12 17:49:40",
+    "user": "kbass",
+    "git_info": {
+        "branch": "fix/provider-optional-dependencies",
+        "commit": "4f89b7dce006105c6849f710cc876dc775284cc0"
+    },
+    "output": "container.present: false\ncpu: Apple M1 Max\ncpu.temp: null\ncpu_cores: 10\ncpu_count: 10\ncpu_threads: 10\ndate: '2026-10-12 17:49:40.258232'\nfrequency: 3228\ngpu.note: Unified Memory\ngpu.present: true\ngpu.total_vram: 32.0 GiB\ngpu.vendor: Apple\nmem.active: 7.7 GiB\nmem.available: 11.1 GiB\nmem.free: 3.5 GiB\nmem.inactive: 7.7 GiB\nmem.percent: 65.2%\nmem.total: 32.0 GiB\nmem.used: 9.9 GiB\nmem.wired: 2.2 GiB\nnet.high_speed: false\nnet.interfaces: []\nnuma.present: false\nplatform.version: 26.7.1\npython: 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]\npython.pip: 26.2.1\npython.version: 3.14.7\nsys.platform: darwin\nthermal.present: false\nuname.machine: arm64\nuname.node: KB-MBP\nuname.processor: arm\nuname.release: 25.6.0\nuname.system: Darwin\nuname.version: 'Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000'\nuser: kbass\n\n\n--- Benchmark Results (Current Thread) ---\nTimer                          Status     Time (s)   Sum (s)    Msg\n----------------------------------------------------------------------\nlima_cli_start                 ok         41.485     41.485     \nlima_cli_list                  ok         0.07       0.07       \nlima_cli_stop                  ok         1.633      1.633      \nlima_cli_delete                ok         0.204      0.204      \nlima_cli_restart               ok         38.115     38.115     \nlima_cli_ssh_config            ok         0.106      0.106      \n\n"
+}

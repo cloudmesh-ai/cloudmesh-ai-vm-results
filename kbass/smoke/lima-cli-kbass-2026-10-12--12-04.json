@@ -1,0 +1,10 @@
+{
+    "benchmark": "Lima CLI",
+    "date": "2026-10-12 12:04:02",
+    "user": "kbass",
+    "git_info": {
+        "branch": "fix/provider-optional-dependencies",
+        "commit": "39ada18b9c583b9416b8a66c7f07407db6b8e606"
+    },
+    "output": "container.present: false\ncpu: Apple M1 Max\ncpu.temp: null\ncpu_cores: 10\ncpu_count: 10\ncpu_threads: 10\ndate: '2026-10-12 12:04:02.007943'\nfrequency: 3228\ngpu.note: Unified Memory\ngpu.present: true\ngpu.total_vram: 32.0 GiB\ngpu.vendor: Apple\nmem.active: 8.4 GiB\nmem.available: 9.4 GiB\nmem.free: 1.0 GiB\nmem.inactive: 8.4 GiB\nmem.percent: 70.5%\nmem.total: 32.0 GiB\nmem.used: 10.7 GiB\nmem.wired: 2.3 GiB\nnet.high_speed: false\nnet.interfaces: []\nnuma.present: false\nplatform.version: 26.7.1\npython: 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]\npython.pip: 26.2.1\npython.version: 3.14.7\nsys.platform: darwin\nthermal.present: false\nuname.machine: arm64\nuname.node: KB-MBP\nuname.processor: arm\nuname.release: 25.6.0\nuname.system: Darwin\nuname.version: 'Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000'\nuser: kbass\n\n\n--- Benchmark Results (Current Thread) ---\nNo timers found.\n\n"
+}

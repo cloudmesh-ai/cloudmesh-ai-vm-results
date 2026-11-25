@@ -1,0 +1,53 @@
+Benchmark: Lima CLI
+Date: 2026-10-24 19:41:46
+User: kbass
+Branch: verify-vm-providers-2026-10-24
+Commit: 707f824d76e7415fd1cafeb39cd1dbaa6035fe66
+----------------------------------------
+container.present: false
+cpu: Apple M1 Max
+cpu.temp: null
+cpu_cores: 10
+cpu_count: 10
+cpu_threads: 10
+date: '2026-10-24 19:41:46.212471'
+frequency: 3228
+gpu.note: Unified Memory
+gpu.present: true
+gpu.total_vram: 32.0 GiB
+gpu.vendor: Apple
+mem.active: 11.4 GiB
+mem.available: 11.7 GiB
+mem.free: 243.8 MiB
+mem.inactive: 10.8 GiB
+mem.percent: 63.5%
+mem.total: 32.0 GiB
+mem.used: 13.9 GiB
+mem.wired: 2.5 GiB
+net.high_speed: false
+net.interfaces: []
+numa.present: false
+platform.version: 26.7.1
+python: 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]
+python.pip: 26.2.1
+python.version: 3.14.7
+sys.platform: darwin
+thermal.present: false
+uname.machine: arm64
+uname.node: KB-MBP
+uname.processor: arm
+uname.release: 25.6.0
+uname.system: Darwin
+uname.version: 'Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000'
+user: kbass
+
+
+--- Benchmark Results (Current Thread) ---
+Timer                          Status     Time (s)   Sum (s)    Msg
+----------------------------------------------------------------------
+lima_provider_list             ok         0.006      0.006      
+lima_provider_set              ok         0.002      0.002      
+lima_start                     ok         39.958     39.958     
+lima_list                      ok         0.061      0.061      
+lima_run                       failed     0.023      0.023      
+

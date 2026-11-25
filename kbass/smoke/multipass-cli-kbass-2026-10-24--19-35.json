@@ -1,0 +1,82 @@
+{
+    "experiment": {
+        "benchmark": "Multipass CLI",
+        "date": "2026-10-24T19:35:13.600834",
+        "user": "kbass",
+        "branch": "verify-vm-providers-2026-10-24",
+        "commit": "707f824d76e7415fd1cafeb39cd1dbaa6035fe66"
+    },
+    "system": {
+        "platform": {
+            "system": "Darwin",
+            "release": "25.6.0",
+            "version": "Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000",
+            "machine": "arm64",
+            "processor": "arm",
+            "node": "KB-MBP",
+            "platform_version": "26.7.1",
+            "sys_platform": "darwin",
+            "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+            "python_version": "3.14.7",
+            "python_pip": null
+        }
+    },
+    "timers": [
+        {
+            "name": "multipass_provider_list",
+            "status": "ok",
+            "time": 0.0085,
+            "sum": 0.0085,
+            "msg": null
+        },
+        {
+            "name": "multipass_provider_set",
+            "status": "ok",
+            "time": 0.0018,
+            "sum": 0.0018,
+            "msg": null
+        },
+        {
+            "name": "multipass_start",
+            "status": "ok",
+            "time": 58.7806,
+            "sum": 58.7806,
+            "msg": null
+        },
+        {
+            "name": "multipass_list",
+            "status": "ok",
+            "time": 0.0899,
+            "sum": 0.0899,
+            "msg": null
+        },
+        {
+            "name": "multipass_stop",
+            "status": "ok",
+            "time": 3.9298,
+            "sum": 3.9298,
+            "msg": null
+        },
+        {
+            "name": "multipass_delete",
+            "status": "ok",
+            "time": 0.1009,
+            "sum": 0.1009,
+            "msg": null
+        },
+        {
+            "name": "multipass_images",
+            "status": "ok",
+            "time": 0.068,
+            "sum": 0.068,
+            "msg": null
+        },
+        {
+            "name": "multipass_flavors",
+            "status": "ok",
+            "time": 0.0014,
+            "sum": 0.0014,
+            "msg": null
+        }
+    ]
+}
